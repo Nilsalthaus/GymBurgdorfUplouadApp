@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GymBurgdorf Upload Plattform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>GymBurgdorf - Tests und Zusammenfassungen Upload</h1>
+    <div id="login-section">
+      <label for="email">GymBurgdorf E-Mail:</label>
+      <input type="email" id="email" placeholder="example@gymburgdorf.ch">
+      <button onclick="login()">Login</button>
+      <p id="error-message"></p>
+    </div>
+    
+    <div id="upload-section" style="display:none;">
+      <h2>Datei hochladen</h2>
+      <form id="upload-form">
+        <label for="teacher">Lehrer:</label>
+        <input type="text" id="teacher" required>
+
+        <label for="subject">Fach:</label>
+        <input type="text" id="subject" required>
+
+        <label for="file">Datei auswählen:</label>
+        <input type="file" id="file" required>
+
+        <button type="submit">Hochladen</button>
+      </form>
+      <p id="upload-message"></p>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
+
